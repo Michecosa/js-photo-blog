@@ -1,0 +1,18 @@
+.polaroid {
+  flex: 1 1 calc(100% 2rem);
+  max-width: 1 1 calc(100% 2rem);
+}
+
+@media screen and (min-width: 600px) {
+  .polaroid {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .polaroid {
+    flex: 1 1 calc(33% - 2rem);
+    max-width: 1 1 calc(33% - 2rem);
+  }
+}
