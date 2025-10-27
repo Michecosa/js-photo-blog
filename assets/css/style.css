@@ -10,7 +10,7 @@ html, body {
 
 .container {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto; 
 }
 
@@ -46,4 +46,26 @@ main {
   padding-top: 2rem;
 
   flex: 1;
+}
+
+
+
+/* POLAROID */
+
+.polaroid {
+  position: relative;
+  background: white;
+  width: 400px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.polaroid-date {
+  font-family:  'Sometype Mono', 'monospace'
 }
