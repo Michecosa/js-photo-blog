@@ -66,8 +66,17 @@ main {
   display: block;
 }
 
-.polaroid-date {
-  font-family:  'Sometype Mono', 'monospace'
+.polaroid-body {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+
+  .polaroid-date {
+    font-family:  'Sometype Mono', 'monospace';
+  }
+
+  .polaroid-description {
+    font-style: italic;
+  }
 }
 
 .pin {
