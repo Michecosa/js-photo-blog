@@ -69,3 +69,10 @@ main {
 .polaroid-date {
   font-family:  'Sometype Mono', 'monospace'
 }
+
+.pin {
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%, -50%);
+}
