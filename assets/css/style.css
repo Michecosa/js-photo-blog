@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 300px;
 }
 
 header {
@@ -37,6 +38,10 @@ header {
   background-repeat: repeat-x;
 
   flex: 0 0 15vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     font-family:'Edu Tas Beginner', sans-serif;
