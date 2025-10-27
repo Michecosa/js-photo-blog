@@ -7,9 +7,15 @@
 
 header {
   background-image: url("../img/wall.png");
-  
+  background-position: top center;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
 
   h1 {
+    font-family:'Edu Tas Beginner', sans-serif;
+    font-size: 5.5rem;
+
     text-align: center;
+    padding: 1rem;
   }
 }
