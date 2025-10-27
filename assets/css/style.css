@@ -8,11 +8,18 @@ html, body {
   height: 100%;
 }
 
+
+/* UTILITIES */
+
 .container {
   width: 80%;
   max-width: 1600px;
   margin: 0 auto; 
 }
+
+.d-flex {display: flex;}
+.flex-wrap {flex-wrap: wrap;}
+.gap-2 {gap: 2rem;}
 
 body {
   display: flex;
@@ -55,7 +62,6 @@ main {
 .polaroid {
   position: relative;
   background: white;
-  width: 400px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
