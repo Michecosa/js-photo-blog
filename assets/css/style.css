@@ -86,7 +86,10 @@ main {
   }
 
   .polaroid-description {
-    font-style: italic;
+    font-family:'Edu Tas Beginner', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-transform: uppercase;
   }
 }
 
