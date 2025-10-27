@@ -3,8 +3,8 @@ h1 {
 }
 
 .polaroid {
-  flex: 1 1 calc(100% - 3rem);
-  max-width: calc(100% - 3rem);
+  flex: 1 1 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 600px) {
