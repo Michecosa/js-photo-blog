@@ -4,12 +4,29 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 header {
   background-image: url("../img/wall.png");
   background-position: top center;
   background-size: auto 100%;
   background-repeat: repeat-x;
+
+  flex: 0 0 15vh;
 
   h1 {
     font-family:'Edu Tas Beginner', sans-serif;
@@ -26,5 +43,7 @@ main {
   background-size: 60vw auto;
   background-repeat: repeat;
 
-  height: 100vh;
+  padding-top: 2rem;
+
+  flex: 1;
 }
