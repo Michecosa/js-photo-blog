@@ -106,4 +106,9 @@ main {
 
 .polaroid:hover {
   cursor: pointer;
+  transform: rotate(10deg);
+
+  .pin {
+    display: none;
+  }
 }
