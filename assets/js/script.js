@@ -28,6 +28,18 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
               </div>
             `;
             polaroid_container.appendChild(elem);
+
+            elem.addEventListener('click', () => {
+              const overlay = document.createElement('div');
+              overlay.id = 'image-popover';
+              overlay.innerHTML = `<img src="" alt="preview">`;
+              const overlay_container = document.getElementById('overlay-container');
+              overlay_container.appendChild(overlay);
+
+              const img = overlay.querySelector('img');
+              img.src = polaroid.url;
+              overlay.classList('active')
+            })
           });
       }
     })
