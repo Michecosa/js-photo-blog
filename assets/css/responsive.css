@@ -7,7 +7,7 @@ h1 {
   max-width: 100%;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 710px) {
   h1 {
     font-size: 5rem;
   }
@@ -18,7 +18,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1080px) {
   h1 {
     font-size: 5.5rem;
   }
