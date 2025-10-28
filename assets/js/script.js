@@ -49,7 +49,8 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
 
             // Overlay 
             elem.addEventListener('click', () => {
-
+              overlayImg.src = polaroid.url;
+              overlay.classList.add('active')
             })
           });
       }
