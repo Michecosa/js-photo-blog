@@ -20,6 +20,7 @@ html, body {
 .d-flex {display: flex;}
 .flex-wrap {flex-wrap: wrap;}
 .gap-2 {gap: 2rem;}
+.justify-content-evenly {justify-content: space-evenly;}
 
 
 
