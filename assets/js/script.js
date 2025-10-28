@@ -30,7 +30,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
           polaroid_container.innerHTML = "";
           polaroid_array.forEach((polaroid) => {
             const elem = document.createElement("div");
-            elem.className = "polaroid";
+            elem.classList.add("polaroid", "polaroid-50", "polaroid-33");
             elem.innerHTML = `
               <div class="pin">
                 <img src="./assets/img/pin.svg" alt="pin">
