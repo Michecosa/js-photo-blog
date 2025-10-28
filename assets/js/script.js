@@ -32,7 +32,12 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
             elem.addEventListener('click', () => {
               const overlay = document.createElement('div');
               overlay.id = 'image-popover';
-              overlay.innerHTML = `<img src="" alt="preview">`;
+              overlay.innerHTML = `
+                <div class="popover-content">
+                  <button class="close-btn">Chiudi</button>
+                  <img src="" alt="preview">
+                </div>
+                `;
               const overlay_container = document.getElementById('overlay-container');
               overlay_container.appendChild(overlay);
 
