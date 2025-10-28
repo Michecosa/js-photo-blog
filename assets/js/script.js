@@ -12,6 +12,13 @@ overlay.innerHTML = `
 const overlay_container = document.getElementById('overlay-container');
 overlay_container.appendChild(overlay);
 
+const overlayImg = overlay.querySelector('img');
+const closeBtn = overlay.querySelector('.close-btn');
+
+closeBtn.addEventListener('click', () => {
+  overlay.classList.remove('active');
+});
+
 fetch("https://lanciweb.github.io/demo/api/pictures/")
   .then((response) => response.json())
   .then((result) => {
