@@ -1,6 +1,17 @@
 const polaroid_container = document.getElementById('polaroid-container')
 const polaroid_array = []
 
+const overlay = document.createElement('div');
+overlay.id = 'image-popover';
+overlay.innerHTML = `
+  <div class="popover-content">
+    <button class="close-btn">Chiudi</button>
+    <img src="" alt="preview">
+  </div>
+  `;
+const overlay_container = document.getElementById('overlay-container');
+overlay_container.appendChild(overlay);
+
 fetch("https://lanciweb.github.io/demo/api/pictures/")
   .then((response) => response.json())
   .then((result) => {
@@ -29,21 +40,9 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
             `;
             polaroid_container.appendChild(elem);
 
+            // Overlay 
             elem.addEventListener('click', () => {
-              const overlay = document.createElement('div');
-              overlay.id = 'image-popover';
-              overlay.innerHTML = `
-                <div class="popover-content">
-                  <button class="close-btn">Chiudi</button>
-                  <img src="" alt="preview">
-                </div>
-                `;
-              const overlay_container = document.getElementById('overlay-container');
-              overlay_container.appendChild(overlay);
 
-              const img = overlay.querySelector('img');
-              img.src = polaroid.url;
-              overlay.classList('active')
             })
           });
       }
